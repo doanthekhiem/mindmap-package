@@ -258,7 +258,7 @@
       }
     ]
   },
-  "theme": { "template": "classic10", "config": {} },
+  "theme": { "template": "seaBlueLine", "config": {} },
   "view": {
     "transform": {
       "scaleX": 0.8,

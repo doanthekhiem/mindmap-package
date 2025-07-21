@@ -1,19 +1,19 @@
-declare module 'simple-mind-map/src/plugins/RichText.js' {
+declare module "simple-mind-map/src/plugins/RichText.js" {
   const RichText: any;
   export default RichText;
 }
 
-declare module 'simple-mind-map/src/plugins/Export.js' {
+declare module "simple-mind-map/src/plugins/Export.js" {
   const Export: any;
   export default Export;
 }
 
-declare module 'simple-mind-map/src/plugins/Drag.js' {
+declare module "simple-mind-map/src/plugins/Drag.js" {
   const Drag: any;
   export default Drag;
 }
 
-declare module 'simple-mind-map/src/parse/xmind.js' {
+declare module "simple-mind-map/src/parse/xmind.js" {
   const xmind: {
     parseXmindFile(file: File): Promise<any>;
     transformXmind(content: string): Promise<any>;
@@ -22,20 +22,25 @@ declare module 'simple-mind-map/src/parse/xmind.js' {
   export default xmind;
 }
 
-declare module 'simple-mind-map/src/parse/markdown.js' {
+declare module "simple-mind-map/src/parse/markdown.js" {
   const markdown: {
     transformMarkdownTo(content: string): Promise<any>;
   };
   export default markdown;
 }
 
-declare module 'xlsx' {
+declare module "simple-mind-map-plugin-themes" {
+  const Themes: any;
+  export default Themes;
+}
+
+declare module "xlsx" {
   export function read(data: any, options?: any): any;
   export function write(data: any, options?: any): any;
   export const utils: any;
 }
 
-declare module 'simple-mind-map' {
+declare module "simple-mind-map" {
   interface MindMapOptions {
     el: HTMLElement | string;
     data: any;
@@ -83,4 +88,4 @@ declare module 'simple-mind-map' {
   }
 
   export default MindMap;
-} 
+}

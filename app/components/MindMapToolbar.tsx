@@ -3,6 +3,8 @@ import { useHistory } from "../hooks/useHistory";
 import { useNodeOperations } from "../hooks/useNodeOperations";
 import { useZoom } from "../hooks/useZoom";
 import { useMindMap } from "../contexts/MindMapContext";
+import { layouts, themes } from "../constants";
+import { useEffect, useState } from "react";
 
 export function MindMapToolbar() {
   const {
@@ -30,8 +32,67 @@ export function MindMapToolbar() {
   } = useExport();
   const { handleBack, handleForward, isStart, isEnd } = useHistory();
   const { mindMapInstance } = useMindMap();
+  const [selectedTheme, setSelectedTheme] = useState<string>(themes[0].value);
+  const [selectedLayout, setSelectedLayout] = useState<string>(layouts[0].value);
+  const handleThemeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    setSelectedTheme(value);
+    if (mindMapInstance && mindMapInstance.setTheme) {
+      mindMapInstance.setTheme(value);
+    } else if (mindMapInstance && mindMapInstance.execCommand) {
+      mindMapInstance.setLayout("SET_THEME", value);
+    }
+  };
+
+  const handleLayoutChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    setSelectedLayout(value);
+    if (mindMapInstance && mindMapInstance.execCommand) {
+      mindMapInstance.setLayout(value);
+    }
+  };
+
+  useEffect(() => {
+    if (mindMapInstance && mindMapInstance.getLayout) {
+      console.log(mindMapInstance.getLayout());
+    }
+  }, [mindMapInstance]);
   return (
     <div className="bg-white border-b border-gray-200 p-4 flex items-center justify-between flex-wrap gap-2">
+      {/* Select Theme */}
+      <div className="flex items-center space-x-2">
+        <label htmlFor="theme-select" className="font-medium">
+          Chủ đề:
+        </label>
+        <select
+          id="theme-select"
+          value={selectedTheme}
+          onChange={handleThemeChange}
+          className="px-2 py-1 rounded border border-gray-300 text-black"
+        >
+          {themes.map((theme) => (
+            <option className="text-black" key={theme.value} value={theme.value}>
+              {theme.name}
+            </option>
+          ))}
+        </select>
+        {/* Select Layout */}
+        <label htmlFor="layout-select" className="font-medium ml-4">
+          Layout:
+        </label>
+        <select
+          id="layout-select"
+          value={selectedLayout}
+          onChange={handleLayoutChange}
+          className="px-2 py-1 rounded border border-gray-300 text-black"
+        >
+          {layouts.map((layout) => (
+            <option className="text-black" key={layout.value} value={layout.value}>
+              {layout.name}
+            </option>
+          ))}
+        </select>
+      </div>
       {/* History Controls */}
       <div className="flex items-center space-x-2">
         <button
@@ -129,7 +190,7 @@ export function MindMapToolbar() {
           ↺
         </button>
         <button
-          onClick={() => mindMapInstance && mindMapInstance.execCommand && mindMapInstance.execCommand('RESET_LAYOUT')}
+          onClick={() => mindMapInstance && mindMapInstance.execCommand && mindMapInstance.execCommand("RESET_LAYOUT")}
           className="px-3 py-1 bg-pink-500 text-white rounded hover:bg-pink-600 transition-colors"
           title="Reset layout"
         >

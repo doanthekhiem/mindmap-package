@@ -66,13 +66,14 @@ export const MindMapProvider: React.FC<MindMapProviderProps> = ({ children }) =>
         }
 
         const MindMap = (await import("simple-mind-map")).default;
+        const Themes = (await import("simple-mind-map-plugin-themes")).default;
+        Themes.init(MindMap);
         const RichTextModule = await import("simple-mind-map/src/plugins/RichText.js");
         const RichText = RichTextModule.default || RichTextModule;
         const ExportModule = await import("simple-mind-map/src/plugins/Export.js");
         const Export = ExportModule.default || ExportModule;
         const DragModule = await import("simple-mind-map/src/plugins/Drag.js");
         const Drag = DragModule.default || DragModule;
-
         // Khởi tạo themeConfig với fontFamily Inter cho mọi node, ép kiểu config về any để tránh lỗi linter
         const themeConfigRaw = data.theme?.config as any;
         const themeConfig: any = {
@@ -124,7 +125,6 @@ export const MindMapProvider: React.FC<MindMapProviderProps> = ({ children }) =>
         mindMap.on("node_click", (node: any) => {
           setSelectedNode(node);
         });
-
         setIsLoading(false);
       } catch (error) {
         console.error("Error initializing mind map:", error);
