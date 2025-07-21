@@ -1,0 +1,287 @@
+{
+  "layout": "mindMap",
+  "root": {
+    "data": {
+      "text": "<p><em><u>khiêm </u></em><u>@123</u></p>",
+      "expand": true,
+      "uid": "89215cac-fa35-423b-8d44-1be7f57710b4",
+      "richText": true,
+      "isActive": false,
+      "imgMap": {}
+    },
+    "children": [
+      {
+        "data": {
+          "text": "<p><em>khiem oke la nut cha</em></p>",
+          "uid": "8b16fcd6-0094-49ff-80b2-c53c52b84f9d",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p><strong>khiem oke la nut cha</strong></p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "031c9f38-7eaf-4829-8ba7-c556f6d280c7",
+          "dir": "right"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p>khiem oke la</p>",
+              "uid": "178efbd8-c20d-4c9e-b1df-6e4e0eb2a883",
+              "expand": true,
+              "richText": true,
+              "isActive": false
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p>khiem oke la</p>",
+                  "uid": "6e40bba7-99aa-41fc-a0d5-0f3b6049c531",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "<p><u>khiem oke la nut cha</u></p>",
+          "uid": "7c75a594-2bd2-4588-a820-b60a16a3345c",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "dir": "right"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p>khiem oke la</p>",
+              "uid": "3715e1ae-52a8-4dc1-9bf4-1f95e4d5b5ba",
+              "expand": true,
+              "richText": true,
+              "isActive": false
+            },
+            "children": [
+              {
+                "data": {
+                  "text": "<p>khiem oke la</p>",
+                  "uid": "b81e8472-fc7e-4777-a746-e107e43ab6a1",
+                  "expand": true,
+                  "richText": true,
+                  "isActive": false
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "uid": "446e59d7-c147-496e-a342-a18b7d525483",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "ec009dad-058a-4ffe-9a77-850ff9dae663",
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "7f446cfe-9e87-4570-b03f-b41bdc9a90fb",
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "940fa4b3-7731-45e0-a6ba-6ac63b32d91d",
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "26172d42-59a6-47d8-a9ad-1ecb2dfa1551",
+          "dir": "right"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "8998449b-d6ea-40f5-ab31-2580e670468a",
+          "dir": "left",
+          "icon": ["sign2_2"]
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "22c4eee9-be86-4aa4-ad35-154070c6195e",
+          "dir": "left",
+          "hyperlink": "https://facebook.com",
+          "hyperlinkTitle": "123"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "51eb94fb-16e4-499d-b473-9b97bc0ba256",
+          "dir": "left",
+          "note": "đéo ra gì cả"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "8ad3af71-c253-4b55-8371-896a5389716b",
+          "dir": "left",
+          "generalization": []
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "uid": "cc4c25a7-bc83-4557-bf84-9ab2277e1ae3",
+          "dir": "left"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "uid": "7f34c722-7cf8-4bd7-b6b7-c0ffee9749b5",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "dir": "left"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p>khiem oke la</p>",
+              "uid": "c25caacd-7f5c-4954-b681-2bec1c4a7541",
+              "expand": true,
+              "richText": true,
+              "isActive": false
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "text": "<p>khiem oke la</p>",
+              "uid": "97bdac1b-5af2-488e-89e7-481818fd78a3",
+              "expand": true,
+              "richText": true,
+              "isActive": false
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "text": "<p>khiem oke la nut cha</p>",
+          "uid": "f94c74e3-de63-4f4c-9a51-0e9c7fdb2811",
+          "expand": true,
+          "richText": true,
+          "isActive": false,
+          "dir": "left"
+        },
+        "children": [
+          {
+            "data": {
+              "text": "<p>khiem oke la</p>",
+              "uid": "d25a6187-eb5f-4eb6-9a6c-21c0f6c2a844",
+              "expand": true,
+              "richText": true,
+              "isActive": false
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "theme": { "template": "classic10", "config": {} },
+  "view": {
+    "transform": {
+      "scaleX": 0.8,
+      "scaleY": 0.8000000000000002,
+      "shear": 0,
+      "rotate": 0,
+      "translateX": 39.2152507073784,
+      "translateY": 46.27315722167245,
+      "originX": 0,
+      "originY": 0,
+      "a": 0.8,
+      "b": 0,
+      "c": 0,
+      "d": 0.8,
+      "e": 39.2152507073784,
+      "f": 46.27315722167245
+    },
+    "state": {
+      "scale": 0.8,
+      "x": 39.2152507073784,
+      "y": 46.27315722167245,
+      "sx": 39.2152507073784,
+      "sy": 46.27315722167245
+    }
+  }
+}
