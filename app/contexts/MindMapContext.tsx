@@ -117,6 +117,7 @@ export const MindMapProvider: React.FC<MindMapProviderProps> = ({ children }) =>
           customTextWidth: 100,
           minNodeTextModifyWidth: 20,
           maxNodeTextModifyWidth: 300, // Giới hạn chiều rộng tối đa của text node
+          view: data.view || {},
         } as any);
         mindMap.addPlugin(RichText);
         mindMap.addPlugin(Export);
